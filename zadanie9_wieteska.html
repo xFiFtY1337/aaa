@@ -1,25 +1,50 @@
-<html>
-<head>
-<meta charset="utf-8">
-</head>
-<body>
-<h1>Wymiena oraz opis dwÃ³ch czÄ™Å›ci selektora,</h1>
-KaÅ¼da reguÅ‚a odnosi siÄ™ do konkretnego elementu (znacznika) i skÅ‚ada siÄ™ z dwÃ³ch czÄ™Å›ci:<br>
-- selektora<br>
-- deklaracji.<br>
-Selektor okreÅ›la do jakich elementÃ³w ma zostaÄ‡ przypisane formatowanie. np. p h1<br>
-Deklaracja jest umieszczona w nawiasie klamrowym {...} i podaje to formatowanie.<br>
-<h1>znaczenie nawiasÃ³w</h1>
-KaÅ¼da deklaracja skÅ‚ada siÄ™ z:<br>
-- przynajmniej z jednego zespoÅ‚u cecha lub inaczej wÅ‚asnoÅ›Ä‡ albo wÅ‚aÅ›ciwoÅ›Ä‡ (ang. property)<br>
-- wartoÅ›Ä‡ (ang. value), przy czym moÅ¼na podaÄ‡ dowolnÄ… liczbÄ™, rozdzielajÄ…c kolejne znakiem Å›rednika (;).<br>
-<h1>opis cechy</h1>
-KaÅ¼da cecha ma Å›ciÅ›le wyszczegÃ³lnionÄ… listÄ™ wartoÅ›ci, ktÃ³re moÅ¼e przyjÄ…Ä‡.<br>
-Na przykÅ‚ad: cecha text-align (wyrÃ³wnanie tekstu) moÅ¼e byÄ‡ przypisana tylko i wyÅ‚Ä…cznie do<br>
-elementÃ³w blokowych, poniewaÅ¼ podanie jej dla elementÃ³w wyÅ›wietlanych w linii nie<br>
-miaÅ‚oby sensu. Z drugiej strony cecha ta moÅ¼e przyjmowaÄ‡ tylko wartoÅ›ci takie jak: left,<br>
-right, center, justify. Przypisanie do niej np. wartoÅ›ci koloru nie miaÅ‚oby sensu.<br>
-<h1>Kiedy stosujemy znak Å›rednika (;), kiedy nie jest konieczny</h1>
-Åšrednik na koÅ„cu deklaracji nie jest konieczny.
-</body>
-</html>
+<h1>Sk³adnia teoretyczna</h1>
+<table width=95% border="1" align="center">
+ <tr>
+ <td>
+ <&nbsp;head><br>
+(...)<br>
+<&nbsp;link rel="Stylesheet" type="text/css" href="style.css" /><br>
+(...)<br>
+<&nbsp;/head>
+ </td>
+ </tr>
+</table>
+<br><br>
+<h1>Gdzie wstawiany jest styl zewnêtrzny, jaki znacznik jest za to odpowiedzialny oraz 
+ile razy mo¿e on wystêpowaæ w dokumencie, jako pod³±czenie stylu CSS?</h1>
+wystarczy wpisaæ w tre¶ci nag³ówkowej ka¿dego z dokumentów (pomiêdzy 
+znacznikami <&nbsp;head> a <&nbsp;/head>)
+<br><br>
+<h1>Jaka jest najprostsza forma wstawiania stylu zewnêtrznego</h1>
+<&nbsp;link rel="Stylesheet" type="text/css" href="style.css" />
+<br><br>
+<h1>Ile arkuszy styli mo¿e byæ do³±czanych do jednego dokumentu HTML oraz jaka zasad 
+musi byæ zachowana przy wiêkszej ilo¶ci do³±czanych styli?</h1>
+mo¿na do³±czyæ dowoln± liczbê zewnêtrznych arkuszy stylów 
+- ka¿dy jako osobny element <&nbsp;link rel="Stylesheet" />. 
+<br><br>
+<h1>Co siê dzieje w przypadku konfliktów?</h1>
+W przypadku konfliktów, wa¿niejsze bêd± deklaracje z arkusza do³±czonego pó¼niej
+<br><br>
+<h1>Jak s± tworzone i edytowane pliki arkuszy z u¿yciem edytora tekstowego</h1>
+Zewnêtrzny arkusz stylów jest on zwyk³ym plikiem tekstowym. Do tworzenia i 
+edytowania wystarczy zwyk³y edytor tekst
+<br><br>
+<h1>Jak s± tworzone i edytowane pliki arkuszy z u¿yciem specjalnego edytora CSS?</h1>
+Mo¿na siê pos³u¿yæ specjalnym edytorem CSS. 
+<br><br>
+<h1>Jakie rozszerzenie posiadaj± plik bêd±cy zewnêtrznym arkuszem styli?</h1>
+Nale¿y jedynie pamiêtaæ, ¿e plik bêd±cy zewnêtrznym arkuszem stylów musi mieæ 
+rozszerzenie *.css
+<br><br>
+<h1>Jakie s± zalety zewnêtrznego arkusza styli</h1>
+<ul>Zalety
+<li> wszystkie nasze strony w obrêbie ca³ego serwisu mog± mieæ pewne wspólne cechy. </li>
+<li> je¶li w ostatniej chwili zdecydujemy siê zmieniæ np. rodzaj czcionki na wszystkich 
+stronach, mo¿emy to zrobiæ, modyfikuj±c jedynie zewnêtrzny arkusz stylów, bez 
+konieczno¶ci zmiany ka¿dej strony osobno.</li>
+</ul>
+<br><br>
+<h1>Uwagi na temat pisania w CSS.</h1>
+Brak
